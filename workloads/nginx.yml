@@ -4,6 +4,9 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
+  annotations:
+  annotations:
+    fluxcd.io/automated: "true"
 spec:
   replicas: 3
   selector:
